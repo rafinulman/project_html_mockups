@@ -2,7 +2,6 @@
 <html>
 <head>
   <title>Your Application: First Screen</title>
-
   <!-- Adds Bootswatch CSS  -->
   <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootswatch/3.2.0/paper/bootstrap.min.css">
 
@@ -19,27 +18,109 @@
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </head>
 <body>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <p class="lead">First screen. This is a p tag with a class of lead. Just throwing it in to make sure that the template is loading Bootstrap assets correctly. Replace this content with your own.</p>
-
-        <div class="btn-group"> <!-- Wrapping a set of <a> tags with btn classes in a <div> of class btn-group joins them together into a bar -->
-          <a href="first_screen.html" class="btn btn-primary">
-            <i class="fa fa-external-link"></i> <!-- Example of how to use Font Awesome icons; often, we use them as text within buttons -->
-            Show
-          </a>
-          <a href="second_screen.html" class="btn btn-warning">
-            <i class="fa fa-edit"></i>
-            Edit
-          </a>
-          <a href="third_screen.html" class="btn btn-danger">
-            <i class="fa fa-trash-o"></i>
-            Delete
-          </a>
-        </div>
+<!-- Nav bar -->
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Apptrack</a>
       </div>
-    </div>
-  </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Alerts</a></li>
+          <li><a href="#">Companies</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contacts <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+              <li class="divider"></li>
+              <li><a href="#">One more separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="navbar-form navbar-left" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">About</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Help <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+<!-- Content -->
+    <div class="well well-lg">Welcome back to app track!</div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <p class="lead"></p>
+            </div>
+            <div class="col-sm-4">
+              <h2>Alerts</h2>
+              <div class="panel panel-default">
+                <div class="list-group">
+                  <a href="#" class="list-group-item">Follow up with Scottie Pippen by tomorrow</a>
+                  <a href="#" class="list-group-item">Interivew on Wednesday for whatever</a>
+                  <a href="#" class="list-group-item">Well, well, well, forgot to do research again...</a>
+                  <a href="#" class="list-group-item">You give disgrace a bad name</a>
+                  <a href="#" class="list-group-item">Don't forget to feed your hamster!</a>
+                </div>
+              </div>
+            </div>
+          <!-- Companies -->
+            <div class="col-sm-4">
+              <h2>Companies</h2>
+               <div class="panel panel-default">
+                  <!-- Companies content   -->
+      
+                  <a href="#" class="list-group-item"><span class="badge">14</span>Amazon</a>
+                  <a href="#" class="list-group-item"><span class="badge">10</span>Deloite</a>
+                  <a href="#" class="list-group-item"><span class="badge">7</span>McKinsey</a>
+                  <a href="#" class="list-group-item"><span class="badge">5</span>Kinsey sexuality study</a>
+                  <a href="#" class="list-group-item"><span class="badge">2</span>My cousin's company</a>
+                </div>
+            </div>
+            <!-- Contacts -->
+            <div class="col-sm-4">
+              <h2>Contacts</h2>
+               <div class="panel panel-default">
+                  <!-- Companies content   -->
+      
+                  <a href="#" class="list-group-item"><span class="badge">2</span>Beldin</a>
+                  <a href="#" class="list-group-item"><span class="badge">0</span>Belgarath the Sorceror</a>
+                  <a href="#" class="list-group-item"><span class="badge">0</span>Polgara the Sorceres</a>
+                  <a href="#" class="list-group-item"><span class="badge">0</span>Poldera the Wolf</a>
+                  <a href="#" class="list-group-item"><span class="badge">0</span>Sir Ryan the Pounder</a>
+                </div>
+            </div>
+
+
 </body>
 </html>

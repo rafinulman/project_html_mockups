@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Your Application: Second Screen</title>
+  <title>AppTrack: Insert company</title>
 
   <!-- Adds Bootswatch CSS  -->
   <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootswatch/3.2.0/paper/bootstrap.min.css">
@@ -19,27 +19,78 @@
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </head>
 <body>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <p class="lead">Second screen. This is a p tag with a class of lead. Just throwing it in to make sure that the template is loading Bootstrap assets correctly. Replace this content with your own.</p>
+<!-- Nav bar -->
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Apptrack</a>
+      </div>
 
-        <div class="btn-group"> <!-- Wrapping a set of <a> tags with btn classes in a <div> of class btn-group joins them together into a bar -->
-          <a href="first_screen.html" class="btn btn-primary">
-            <i class="fa fa-external-link"></i> <!-- Example of how to use Font Awesome icons; often, we use them as text within buttons -->
-            Show
-          </a>
-          <a href="second_screen.html" class="btn btn-warning">
-            <i class="fa fa-edit"></i>
-            Edit
-          </a>
-          <a href="third_screen.html" class="btn btn-danger">
-            <i class="fa fa-trash-o"></i>
-            Delete
-          </a>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="#">Alerts</a></li>
+          <li class="active"><a href="#">Companies</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contacts <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+              <li class="divider"></li>
+              <li><a href="#">One more separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="navbar-form navbar-left" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">About</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Help <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+<!-- Content -->
+    <div class="well well-lg">Thinking about a new position?</div>
+    <div class="container">
+      <h2>Enter a new company</h2>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="input-group input-group-lg">
+            <span class="input-group-addon">Company name</span>
+            <input type="text" class="form-control" placeholder="Acme Corp">
+          </div>
+          <h1></h1>
+          <div class="input-group input-group-sm">
+            <span class="input-group-addon">Position name</span>
+            <input type="text" class="form-control" placeholder="Bean counter">
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</body>
-</html>
+  </body>
+  </html>
+
